@@ -7,8 +7,8 @@
 #include "Memory.h"
 
 #include "Interface.h"
-#include "globals.hpp"
 
+#include "globals.hpp"
 #include "hooks/DrawModelExecute.h"
 #include "hooks/CreateMove.h"
 #include "hooks/FrameStageNotify.h"
@@ -90,7 +90,7 @@ void Main()
     oRunCommand = VMTHook< _RunCommand>((PVOID**)Prediction, (PVOID)hkRunCommand, 19);
     oPaint = VMTHook<_Paint>((PVOID**)EngineVGui, (PVOID)hkPaint, 13);
 
-    present = GetRealFromRelative((char*)findPattern(PresentModule, PresentPattern, "Present"), 0x2, 6, false);
+    present = GetRealFromRelative((char*)findPattern(PresentModule, PresentPattern, "Present"), 3, 7, false); // new present pattern
 
     Globals::damageEvent = new DamageEvent();
     Globals::deathEvent = new DeathEvent();
