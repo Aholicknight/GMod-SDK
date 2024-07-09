@@ -209,9 +209,7 @@ HRESULT __stdcall hkPresent(IDirect3DDevice9* pDevice, CONST RECT* pSourceRect, 
 	}
 	ImGui::End();	
 
-	AnnoyingBeginningMessageButComeOnThisNeedsOneCusIDecidedItDoes();
-
-	if (Globals::openMenu && isAnnoyingMessageDone)
+	if (Globals::openMenu)
 	{
 		rainbowColor(Settings::menuColor, Settings::Misc::rainbowSpeed);
 
