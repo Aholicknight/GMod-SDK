@@ -65,7 +65,7 @@
 #define InputOffset 0x5
 #define RandomSeedOffset 0x5
 #define PresentModule "gameoverlayrenderer"
-#define PresentPattern  "\xFF\x15????\x8B\xF0\x85\xFF"
+#define PresentPattern  "\x48\x8B\x05????\x4D\x8B\xCE\x4C\x8B\xC5"
 #define GetClassNamePattern "\xE8????\x50\x8B\x43\x08"
 #define CL_MovePattern "\xE8????\x83\xC4\x08\xFF\x15????\xDC\x25????"
 #define BSendPacketOffset 0x2F
